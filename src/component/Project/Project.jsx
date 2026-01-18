@@ -1,11 +1,10 @@
 import React from "react";
+import PortfolioResult from "../../assets/portfolio-result.png";
+import ChatHubResult from "../../assets/ChatHubResult.png";
+import ChatBoatResult from "../../assets/ChatBoatResult.png";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-// 👉 Project Images (apne assets ke naam ke hisab se rakhna)
-import Calculator from "../../assets/Calculator.png";
-
-
-// 👉 Tech Colors Map
+// Tech Colors
 const techColors = {
   HTML: "bg-orange-600/20 text-orange-400",
   CSS: "bg-blue-600/20 text-blue-400",
@@ -13,80 +12,60 @@ const techColors = {
   React: "bg-cyan-600/20 text-cyan-400",
   Tailwind: "bg-sky-600/20 text-sky-400",
   MongoDB: "bg-green-600/20 text-green-400",
-  Firebase: "bg-amber-600/20 text-amber-400",
-  API: "bg-purple-600/20 text-purple-400",
-  LocalStorage: "bg-pink-600/20 text-pink-400",
+  Firebase: "bg-pink-600/20 text-pink-400",
+  Cloudinary: "bg-indigo-600/20 text-indigo-400",
+  GeminiAPI: "bg-purple-600/20 text-purple-400",
 };
+
 
 function Project() {
 
-  // 👉 All Projects Data
+  // All Projects Data
   const projects = [
     {
-      title: "Calculator App ( Mini Project )",
+      title: "Personal Portfolio Website",
       description:
-        "A simple calculator web app built using HTML, CSS, and JavaScript with live calculation.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      image: Calculator,
-      live: "https://chandankumar682.github.io/Calculator1/",
-      code: "https://github.com/Chandankumar682/Calculator1",
+        "A responsive personal portfolio website built using React and Vite to showcase my skills, projects, education, and contact details.",
+      tech: ["HTML", "Tailwind", "JavaScript", "React"],
+      image: PortfolioResult,
+      live: "#",
+      code: "#",
     },
-    // {
-    //   title: "Portfolio Website",
-    //   description:
-    //     "Personal portfolio website built using React and Tailwind CSS.",
-    //   tech: ["React", "Tailwind"],
-    //   image: PortfolioImg,
-    //   live: "#",
-    //   code: "#",
-    // },
-    // {
-    //   title: "Weather App",
-    //   description:
-    //     "Weather application that shows real-time weather using API.",
-    //   tech: ["JavaScript", "API", "CSS"],
-    //   image: WeatherImg,
-    //   live: "#",
-    //   code: "#",
-    // },
-    // {
-    //   title: "Chat Application",
-    //   description:
-    //     "Real-time chat application with authentication and messaging.",
-    //   tech: ["React", "Firebase"],
-    //   image: ChatImg,
-    //   live: "#",
-    //   code: "#",
-    // },
-    // {
-    //   title: "ToDo App",
-    //   description:
-    //     "Simple task management app with CRUD operations.",
-    //   tech: ["React", "LocalStorage"],
-    //   image: TodoImg,
-    //   live: "#",
-    //   code: "#",
-    // },
+    {
+      title: "ChatHub ( Realtime Chat Application )",
+      description:
+        "A real-time chat application built using React, HTML5, CSS3, and JavaScript, with Firebase for authentication and real-time messaging, and Cloudinary for image upload and media storage.",
+      tech: ["HTML", "CSS", "JavaScript", "React", "Firebase", "Cloudinary"],
+      image: ChatHubResult,
+      live: "#",
+      code: "#",
+    },
+    {
+      title: "AI Chatbot Web App like ( ChatGPT )",
+      description:
+        "An AI-powered chatbot web application built with React and Google Gemini API. It supports real-time conversations, chat history management, multiple chat sessions, and dark/light mode with a clean and responsive UI.",
+      tech: ["HTML", "CSS", "JavaScript", "React", "GeminiAPI"],
+      image: ChatBoatResult,
+      live: "https://chandankumar682.github.io/ChatBoat/",
+      code: "https://github.com/Chandankumar682/ChatBoat",
+    },
   ];
 
   return (
     <section id="Project">
       <div className="min-h-[calc(100svh-4rem)] max-w-[1400px] mx-auto px-5 sm:px-10 pt-20">
-
         {/* Heading */}
-        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-center mb-12">
+        <h1 className="text-white uppercase text-center mb-12 text-2xl sm:text-3xl md:text-4xl font-bold">
           Projects
         </h1>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
+        <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#111827] border border-gray-800 rounded-xl
-              shadow-md hover:scale-[1.03] transition-transform duration-300
-              flex flex-col overflow-hidden"
+              className="flex flex-col bg-[#111827] border border-gray-800 rounded-xl
+              shadow-md hover:scale-[1.03] transition-transform duration-300 overflow-hidden"
             >
               {/* Project Image */}
               <img
@@ -97,12 +76,11 @@ function Project() {
 
               {/* Content */}
               <div className="p-5 flex flex-col flex-grow">
-
-                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
+                <h3 className="mb-2 text-lg sm:text-xl font-semibold text-white">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-400 text-sm sm:text-base mb-4 flex-grow">
+                <p className=" text-sm sm:text-base mb-4 text-gray-400 flex-grow">
                   {project.description}
                 </p>
 
@@ -111,9 +89,7 @@ function Project() {
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className={`text-xs px-3 py-1 rounded-full ${
-                        techColors[tech] || "bg-gray-600/20 text-gray-400"
-                      }`}
+                      className={`text-xs px-3 py-1 rounded-full ${techColors[tech] || "bg-gray-600/20 text-gray-400"}`}
                     >
                       {tech}
                     </span>
@@ -143,11 +119,9 @@ function Project() {
                     <FaGithub /> Code
                   </a>
                 </div>
-
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </section>

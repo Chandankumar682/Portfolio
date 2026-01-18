@@ -6,19 +6,17 @@ export default function Education() {
       <div className="min-h-[calc(100svh-4rem)] max-w-[1400px] mx-auto px-5 sm:px-10 pt-40 flex flex-col items-center">
 
         {/* Heading */}
-        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-12">
+        <h1 className="text-white md:text-4xl sm:text-3xl text-2xl font-bold uppercase mb-12">
           Education
         </h1>
-
-        {/* Timeline */}
-        <div className="flex flex-col items-center gap-6 w-full max-w-[800px]">
-
+        
+        <div className="flex flex-col w-full max-w-[800px] items-center gap-6">
           {/* B.Tech */}
-          <div className="backdrop-blur-md bg-[#111837]/90 shadow-md p-6
-            border border-blue-500/30 rounded-lg
-            flex flex-col items-center text-center
-            hover:scale-[1.02] transition-all duration-300 w-full">
-            
+          <div
+            className="flex flex-col w-full items-center text-center
+             backdrop-blur-md bg-[#111837]/90 shadow-md p-6
+            border border-blue-500/30 rounded-lg hover:scale-[1.02] transition-all duration-300"
+          >
             <h2 className="text-white/90 text-lg sm:text-xl font-bold">
               Technocrats Institute of Technology, Bhopal
             </h2>
@@ -36,11 +34,11 @@ export default function Education() {
           <FaArrowUp className="text-white/70 text-xl" />
 
           {/* 12th */}
-          <div className="backdrop-blur-md bg-[#111837]/90 shadow-md p-6
-            border border-blue-500/30 rounded-lg
-            flex flex-col items-center text-center
-            hover:scale-[1.02] transition-all duration-300 w-full">
-            
+          <div
+            className="flex flex-col w-full items-center text-center
+             backdrop-blur-md bg-[#111837]/90 shadow-md p-6
+            border border-blue-500/30 rounded-lg hover:scale-[1.02] transition-all duration-300"
+          >
             <h2 className="text-white/90 text-lg sm:text-xl font-bold">
               RK +2 High School Lalgarh Palamu (JAC)
             </h2>
@@ -58,11 +56,11 @@ export default function Education() {
           <FaArrowUp className="text-white/70 text-xl" />
 
           {/* 10th */}
-          <div className="backdrop-blur-md bg-[#111837]/90 shadow-md p-6
-            border border-blue-500/30 rounded-lg
-            flex flex-col items-center text-center
-            hover:scale-[1.02] transition-all duration-300 w-full">
-            
+          <div
+            className="flex flex-col w-full items-center text-center
+             backdrop-blur-md bg-[#111837]/90 shadow-md p-6
+            border border-blue-500/30 rounded-lg hover:scale-[1.02] transition-all duration-300"
+          >
             <h2 className="text-white/90 text-lg sm:text-xl font-bold">
               High School Kikra Danda (JAC)
             </h2>
@@ -76,7 +74,6 @@ export default function Education() {
               YOP : 2018 - 2019
             </p>
           </div>
-
         </div>
       </div>
     </section>

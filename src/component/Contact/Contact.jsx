@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Contact() {
   const [result, setResult] = useState("");
 
-  const onSubmit = async (event) => {
+  async function onSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -15,29 +15,20 @@ function Contact() {
     });
 
     const data = await response.json();
-    setResult(
-      data.success ? "Message sent successfully!" : "Error sending message"
-    );
+    setResult(data.success ? "Message send to Developer" : "Error while sending message");
   };
 
   return (
     <section id="Contact" className="py-16">
-
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-10 flex flex-col items-center">
-
+      <div className=" flex flex-col items-center max-w-[1400px] mx-auto sm:px-10 px-4">
         {/* Heading */}
-        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-10">
+        <h1 className="text-white md:text-4xl text-2xl sm:text-3xl uppercase mb-10 font-bold">
           Contact
         </h1>
 
         {/* Form */}
         <form
-          onSubmit={onSubmit}
-          className="w-full max-w-md sm:max-w-xl
-          bg-[#111837]/90 backdrop-blur-md
-          shadow-md rounded-2xl p-6 sm:p-10"
-        >
-
+          onSubmit={onSubmit} className="w-full max-w-md sm:max-w-xl bg-[#111837]/90 backdrop-blur-md shadow-md rounded-2xl p-6 sm:p-10">
           {/* Name */}
           <div className="flex flex-col gap-2 mb-5">
             <label className="text-white text-sm">Name</label>
@@ -46,9 +37,7 @@ function Contact() {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full bg-transparent border border-gray-600
-              text-white px-4 py-3 rounded-lg outline-none
-              focus:border-blue-500"
+              className="w-full bg-transparent text-white px-4 py-3 border border-gray-600 rounded-lg outline-none focus:border-blue-500"
             />
           </div>
 
@@ -60,41 +49,33 @@ function Contact() {
               name="email"
               placeholder="Your Email"
               required
-              className="w-full bg-transparent border border-gray-600
-              text-white px-4 py-3 rounded-lg outline-none
-              focus:border-blue-500"
+              className="w-full bg-transparent text-white border border-gray-600 rounded-lg outline-none focus:border-blue-500 py-3 px-4"
             />
           </div>
 
           {/* Message */}
-          <div className="flex flex-col gap-2 mb-6">
-            <label className="text-white text-sm">Message</label>
+          <div className="mb-6 flex flex-col gap-2">
+            <label className="text-sm text-white">Message</label>
             <textarea
               name="message"
               rows="5"
               placeholder="Your Message"
               required
-              className="w-full bg-transparent border border-gray-600
-              text-white px-4 py-3 rounded-lg outline-none resize-none
-              focus:border-blue-500"
+              className="w-full text-white px-4 py-3 bg-transparent border border-gray-600 rounded-lg outline-none focus:border-blue-500 resize-none"
             ></textarea>
           </div>
 
           {/* Button */}
           <button
             type="submit"
-            className="w-full text-white border border-blue-500
-            py-3 rounded-full hover:bg-blue-500
-            transition-all duration-300"
+            className="text-white w-full py-3  border border-blue-500 rounded-full hover:bg-blue-500 transition-all duration-300"
           >
             Send Message
           </button>
 
           {/* Result */}
           {result && (
-            <p className="text-center text-sm text-green-400 mt-4">
-              {result}
-            </p>
+            <p className="text-sm mt-4 text-center text-green-400">{result}</p>
           )}
         </form>
       </div>

@@ -16,7 +16,6 @@ function Navbar() {
   return (
     <header className="sticky top-0 left-0 right-0 backdrop-blur-md bg-[#111837]/90 z-50 shadow-md">
       <nav className="max-w-[1400px] mx-auto px-5 sm:px-10 h-[10vh] flex justify-between items-center relative">
-
         {/* Logo */}
         <a href="#Home" className="text-2xl sm:text-3xl font-bold text-white">
           Chandan
@@ -40,8 +39,8 @@ function Navbar() {
         <div className="flex items-center gap-x-4">
           <a href="mailto:chandankumad29@gmail.com">
             <button className="hidden lg:block bg-[#1710f7] text-white font-semibold px-5 py-2 rounded-full hover:bg-transparent hover:border-[#1710f7] border-2 border-transparent transition-all duration-300">
-            Connect With Me
-          </button>
+              Connect With Me
+            </button>
           </a>
 
           {/* Hamburger */}
@@ -55,16 +54,12 @@ function Navbar() {
 
         {/* Mobile Menu */}
         <ul
-          className={`md:hidden absolute top-full left-1/2 -translate-x-1/2 w-[90%]
-          bg-[#111837]/95 backdrop-blur-md shadow-md rounded-xl py-8
-          flex flex-col items-center gap-y-6 transition-all duration-500
-          ${showMenu ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}
+          className={`flex flex-col items-center gap-y-6  md:hidden absolute top-full left-1/2 -translate-x-1/2 w-[90%]
+          bg-[#111837]/95 backdrop-blur-md shadow-md rounded-xl py-8 transition-all duration-500 ${showMenu? "opacity-100 scale-100": "opacity-0 scale-95 pointer-events-none"}`}
         >
           {menuItems.map((item) => (
             <li key={item.id}>
-              <a
-                href={`#${item.id}`}
-                onClick={() => setShowMenu(false)}
+              <a href={`#${item.id}`} onClick={() => setShowMenu(false)}
                 className="font-semibold tracking-wider text-white hover:text-[#2790f7]"
               >
                 {item.label}

@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
 @import "tailwindcss";
 
-/* Global background */
 body {
   @apply bg-[#111827];
   min-height: 100svh;
+  font-family: "Epunda Slab", serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-/* Common spacing for all sections (mobile-first) */
 .section {
-  padding-top: 2.5rem;   /* py-10 */
+  padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
 @media (min-width: 768px) {
   .section {
-    padding-top: 3.5rem; /* md:py-14 */
+    padding-top: 3.5rem; 
     padding-bottom: 3.5rem;
   }
 }
