@@ -28,8 +28,8 @@ function Project() {
         "A responsive personal portfolio website built using React and Vite to showcase my skills, projects, education, and contact details.",
       tech: ["HTML", "Tailwind", "JavaScript", "React"],
       image: PortfolioResult,
-      live: "#",
-      code: "#",
+      live: "https://chandankumar682.github.io/Portfolio/",
+      code: "https://github.com/Chandankumar682/Portfolio",
     },
     {
       title: "ChatHub ( Realtime Chat Application )",
