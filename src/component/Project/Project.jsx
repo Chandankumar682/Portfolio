@@ -37,8 +37,8 @@ function Project() {
         "A real-time chat application built using React, HTML5, CSS3, and JavaScript, with Firebase for authentication and real-time messaging, and Cloudinary for image upload and media storage.",
       tech: ["HTML", "CSS", "JavaScript", "React", "Firebase", "Cloudinary"],
       image: ChatHubResult,
-      live: "#",
-      code: "#",
+      live: "https://chathub-webapp.netlify.app/",
+      code: "https://github.com/Chandankumar682/ChatHub",
     },
     {
       title: "AI Chatbot Web App like ( ChatGPT )",
