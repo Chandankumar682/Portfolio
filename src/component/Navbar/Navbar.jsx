@@ -37,7 +37,7 @@ function Navbar() {
 
         {/* Right Side */}
         <div className="flex items-center gap-x-4">
-          <a href="mailto:chandankumad29@gmail.com">
+          <a href="mailto:chandankumad29@gmail.com" target="_blank">
             <button className="hidden lg:block bg-[#1710f7] text-white font-semibold px-5 py-2 rounded-full hover:bg-transparent hover:border-[#1710f7] border-2 border-transparent transition-all duration-300">
               Connect With Me
             </button>

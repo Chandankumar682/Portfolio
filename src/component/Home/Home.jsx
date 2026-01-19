@@ -42,7 +42,7 @@ function Home() {
             </button>
           </a>
 
-          <a href={ChandanResume}>
+          <a href={ChandanResume} target="_blank">
             <button
               className="text-white font-semibold px-6 py-3 border-2 rounded-full
             hover:text-[#1710f7] transition"
@@ -65,12 +65,12 @@ function Home() {
             </a>
           </li>
           <li className="text-white">
-            <a href="mailto:chandankumad29@gmail.com">
+            <a href="mailto:chandankumad29@gmail.com" target="_blank">
               <TfiEmail className="w-7 h-7 sm:w-8 sm:h-8 hover:text-[#1710f7]" />
             </a>
           </li>
           <li className="text-white">
-            <a href="https://www.instagram.com/ku_chandan_18?igsh=ZnNlN21rOHZudWc3">
+            <a href="https://www.instagram.com/ku_chandan_18?igsh=ZnNlN21rOHZudWc3" target="_blank">
               <FaInstagram className="w-7 h-7 sm:w-8 sm:h-8 hover:text-[#1710f7]" />
             </a>
           </li>
