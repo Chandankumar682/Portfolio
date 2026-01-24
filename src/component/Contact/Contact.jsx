@@ -19,8 +19,8 @@ function Contact() {
   };
 
   return (
-    <section id="Contact" className="py-16">
-      <div className=" flex flex-col items-center max-w-[1400px] mx-auto sm:px-10 px-4">
+    <section id="Contact" className="scroll-mt-[10vh]">
+      <div className=" flex flex-col items-center max-w-[1400px] mx-auto sm:px-10 px-4 pt-5 pb-5">
         {/* Heading */}
         <h1 className="text-white md:text-4xl text-2xl sm:text-3xl uppercase mb-10 font-bold">
           Contact

@@ -2,8 +2,8 @@ import { FaArrowUp } from "react-icons/fa";
 
 export default function Education() {
   return (
-    <section id="Education">
-      <div className="min-h-[calc(100svh-4rem)] max-w-[1400px] mx-auto px-5 sm:px-10 pt-40 flex flex-col items-center">
+    <section id="Education" className="scroll-mt-[10vh]">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-10 pt-5 pb-30 flex flex-col items-center">
 
         {/* Heading */}
         <h1 className="text-white md:text-4xl sm:text-3xl text-2xl font-bold uppercase mb-12">

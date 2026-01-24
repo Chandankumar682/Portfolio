@@ -15,8 +15,8 @@ function Skill() {
   ];
 
   return (
-    <section id="Skill" className="py-16">
-      <div className="flex flex-col items-center max-w-[1400px] mx-auto px-5 sm:px-10 py-10">
+    <section id="Skill" className="scroll-mt-[10vh]">
+      <div className="flex flex-col items-center max-w-[1400px] mx-auto px-5 sm:px-10 pt-5 pb-30">
         {/* Heading */}
         <h1 className="mb-8 text-white text-2xl sm:text-3xl md:text-4xl font-bold uppercase">
           Skills

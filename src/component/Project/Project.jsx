@@ -52,8 +52,8 @@ function Project() {
   ];
 
   return (
-    <section id="Project">
-      <div className="min-h-[calc(100svh-4rem)] max-w-[1400px] mx-auto px-5 sm:px-10 pt-20">
+    <section id="Project" className="scroll-mt-[10vh]">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-10 pt-5 pb-30">
         {/* Heading */}
         <h1 className="text-white uppercase text-center mb-12 text-2xl sm:text-3xl md:text-4xl font-bold">
           Projects

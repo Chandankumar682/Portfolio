@@ -8,9 +8,9 @@ import ChandanResume from "../../assets/ChandanResume.pdf";
 
 function Home() {
   return (
-    <section id="Home">
+    <section id="Home" className="scroll-mt-[10vh]">
       <div
-        className="min-h-[calc(100svh-4rem)] max-w-[1400px]
+        className="min-h-[calc(100svh-10vh)] max-w-[1400px]
         flex flex-col items-center justify-center text-center mx-auto px-5 sm:px-10"
       >
         {/* Profile Image */}

@@ -3,8 +3,8 @@ import ChandanProfile from "../../assets/ChandanProfile.jpg";
 
 function About() {
   return (
-    <section id="About" className="scroll-mt-24">
-      <div className="max-w-[1100px] flex flex-col mx-auto sm:px-10  pt-14 px-5 items-center">
+    <section id="About" className="scroll-mt-[10vh]">
+      <div className="max-w-[1100px] flex flex-col mx-auto sm:px-10  pt-5 pb-30 px-5 items-center">
         {/* Section Heading */}
         <h1 className="uppercase text-white sm:text-3xl text-2xl md:text-4xl font-bold mb-6">
           About Me
